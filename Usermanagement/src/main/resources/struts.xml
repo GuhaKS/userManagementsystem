@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.convention.action.suffix" value="Controller"/>
+    <constant name="struts.convention.action.mapAllMatches" value="true"/>
+    <constant name="struts.convention.default.parent.package" value="rest-default"/>
+    <constant name="struts.convention.package.locators" value="rest" />
+    <constant name="struts.mapper.class" value="org.apache.struts2.dispatcher.mapper.PrefixBasedActionMapper" />
+    <constant name="struts.mapper.prefixMapping" value="/api:rest,:struts"/>
+    <constant name="struts.rest.namespace" value="/api" />
+    <constant name="struts.rest.content.restrictToGET" value="false"/>
+
+    <package name="api" namespace="/api" extends="rest-default">
+        <action name="accounts/*" class="com.example.proj.controller.UsersController">
+            <param name="id">{1}</param>
+        </action>
+    </package>
+
+</struts>

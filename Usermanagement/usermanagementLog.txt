@@ -1,0 +1,42 @@
+Jul 27, 2023 2:32:43 PM com.example.proj.controller.UsersController index
+INFO: method:GET
+Api call=> api\account
+
+Jul 27, 2023 2:32:43 PM com.example.proj.controller.UsersController WriteResponse
+INFO: {
+  "id": 0,
+  "userDatas": [
+    {
+      "id": 1,
+      "name": "santhakowsi31@gmail.com",
+      "email": "askokpokas",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "name": "kowsi",
+      "email": "kit.23.19bec055@gmail.com",
+      "password": "1234"
+    }
+  ]
+}
+Jul 27, 2023 2:32:46 PM com.example.proj.controller.UsersController show
+INFO: method:GET
+Api call=> api\account\id
+Jul 27, 2023 2:32:46 PM com.example.proj.controller.UsersController WriteResponse
+INFO: {
+  "id": 1,
+  "name": "santhakowsi31@gmail.com",
+  "email": "askokpokas",
+  "password": "1234"
+}
+Jul 27, 2023 2:32:50 PM com.example.proj.controller.UsersController show
+INFO: method:GET
+Api call=> api\account\id
+Jul 27, 2023 2:32:50 PM com.example.proj.controller.UsersController WriteResponse
+INFO: {
+  "id": 2,
+  "name": "kowsi",
+  "email": "kit.23.19bec055@gmail.com",
+  "password": "1234"
+}
